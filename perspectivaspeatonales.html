@@ -1,0 +1,60 @@
+<!DOCTYPE html> <!-- Versión del HTML que estamos usando. HTML 5 -->
+<html lang="en" dir="ltr"> <!-- Inicio del documento Html -->
+  <head> <!-- Configuración no visible del Documento Web -->
+    <meta charset="utf-8"> <!-- Configuración de Caracteres Permitidos ´ $ -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="./Assets/CSS/estilos.css"> <!-- Vinculación con mi archivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat&display=swap" rel="stylesheet"> <!-- Fonts -->
+
+    <title>Interior Exterior</title> <!-- Visible en la pestaña del navegador -->
+  </head>
+
+  <body> <!-- Cuerpo del documento html -->
+    <header id="inicio" class="header"> <!-- Encabezado -->
+
+      <nav class="navegador"> <!-- Navegador -->
+        <a href="./index.html"> <img class="logo" src="./Assets/Imagenes/logonav.png" alt="Logo"> </a> <!-- Logo -->
+        <ul class="nav_list"> <!-- Enlaces internos -->
+          <li> <a class="menu" href="./index.html#sobremi">SOBRE MÍ</a> </li>
+          <li> <a class="menu" href="./index.html#galeria">GALERÍA</a>
+              <ul class="submenu"> <!-- Menú desplegable dentro de galería-->
+                <li> <a class="desplegable" href="perspectivaspeatonales.html">PERSPECTIVAS PEATONALES</a> </li>
+                <li> <a class="desplegable" href="axonometricas.html">AXONOMÉTRICAS</a> </li>
+                <li> <a class="desplegable" href="mapas.html">MAPAS</a> </li>
+              </ul>
+          </li>
+          <li> <a class="menu" href="./index.html#contacto">CONTACTO</a> </li>
+        </ul>
+      </nav>
+
+      <div class="portfolio">
+        <div class="titulo">
+          <h3 class="h3">Perspectivas Peatonales</h3>
+        </div>
+
+        <div class="imggaleria">
+          <div class="imgcontenedorp">
+            <img class="img" src="./Assets/Imagenes/i1.jpg" alt="i1">
+          </div>
+          <div class="imgcontenedorp">
+            <img class="img" src="./Assets/Imagenes/i2.jpg" alt="i2">
+          </div>
+          <div class="imgcontenedorp">
+            <img class="img" src="./Assets/Imagenes/i3.jpg" alt="i3">
+          </div>
+          <div class="imgcontenedorp">
+            <img class="img" src="./Assets/Imagenes/i4.jpg" alt="i4">
+          </div>
+
+        </div>
+      </div>
+
+      <img class="logofinal" src="./Assets/Imagenes/Logo2.png" alt="Logo">
+
+    </header>
+  </body>

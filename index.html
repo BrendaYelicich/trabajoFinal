@@ -1,0 +1,144 @@
+<!DOCTYPE html> <!-- Versión del HTML que estamos usando. HTML 5 -->
+<html lang="en" dir="ltr"> <!-- Inicio del documento Html -->
+  <head> <!-- Configuración no visible del Documento Web -->
+    <meta charset="utf-8"> <!-- Configuración de Caracteres Permitidos ´ $ -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="./Assets/CSS/estilos.css"> <!-- Vinculación con mi archivo de estilos CSS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat&display=swap" rel="stylesheet"> <!-- Fonts -->
+
+    <title>BY Arq Ilustrada</title> <!-- Visible en la pestaña del navegador -->
+  </head>
+
+  <body> <!-- Cuerpo del documento html -->
+    <header id="inicio"> <!-- Encabezado -->
+
+      <nav class="navegador"> <!-- Navegador -->
+        <a href="#inicio"> <img class="logo" src="./Assets/Imagenes/logonav.png" alt="Logo"> </a> <!-- Logo -->
+        <ul class="nav_list"> <!-- Enlaces internos -->
+          <li> <a class="menu" href="#sobremi">SOBRE MÍ</a> </li>
+          <li> <a class="menu" href="#galeria">GALERÍA</a>
+              <ul class="submenu"> <!-- Menú desplegable dentro de galería-->
+                <li> <a class="desplegable" href="perspectivaspeatonales.html">PERSPECTIVAS PEATONALES</a> </li>
+                <li> <a class="desplegable" href="axonometricas.html">AXONOMÉTRICAS</a> </li>
+                <li> <a class="desplegable" href="mapas.html">MAPAS</a> </li>
+              </ul>
+          </li>
+          <li> <a class="menu" href="#contacto">CONTACTO</a> </li>
+        </ul>
+      </nav>
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/Imagenes/Carrusel1.jpg" class="d-block w-100" alt="1">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Carrusel2.jpg" class="d-block w-100" alt="2">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Carrusel3.jpg" class="d-block w-100" alt="3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    </header>
+
+    <main>
+      <section id="sobremi" class="secciones">
+        <div class="sobremi">
+            <div class="titulo">
+              <h3 class="h3">SOBRE MÍ</h3>
+            </div>
+            <div class="presentación">
+              <img class="foto" src="./Assets/Imagenes/Foto.jpg" alt="Foto">
+              <p class="biografía">Mi nombre es Brenda Yelicich, soy de Avellaneda, Santa Fe, Argentina y tengo 28 años. Estuve unos años viviendo en
+                 Córdoba Capital, donde estudié y me gradué de Arquitecta.
+             <br>Durante el cursado de la carrera, una de las cosas que más me costaba era el poder mostrar mis ideas y proyectos a través de
+                 renders, ya que siempre buscaba alcanzar una imagen fotorrealista, lo cual me frustraba ya que nunca lo conseguía de la manera
+                 que yo quería, ya sea porque la capacidad de la computadora no era suficiente, o porque no sabía manejar ciertos programas.
+                 Pero en ese camino de búsqueda, tanto laboral, como de estilo personal, encontré algunas ilustraciones que me llamaron la
+                 atención, empecé a investigar más sobre el tema, y me di cuenta que esa manera de representar los espacios se ajustaba más a mí,
+                 por lo cual decidí realizar algunos cursos, y comenzar así a formar mi estilo propio de representación.
+             <br>Este portfolio busca no solo ser una ventana para mis trabajos, en el caso de que alguien requiera mis servicios, sino también
+                 que sirva de inspiración para otros que estén en ese mismo camino que yo atravecé, donde sentía que nunca iba a poder realizar
+                 un 3d que transmita una sensación determinada.
+              </p>
+            </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="secciones">
+        <div class="galeria">
+          <div class="titulo">
+            <h3 class="h3">GALERÍA</h3>
+          </div>
+          <div class="tres">
+            <div class="gal">
+              <h4 class="h4">PERSPECTIVAS PEATONALES</h4>
+              <a href="perspectivaspeatonales.html"> <img class="imagenes" src="./Assets/Imagenes/peatonal.png" alt="Peatonal"> </a>
+            </div>
+            <div class="gal">
+              <h4 class="h4">AXONOMÉTRICAS</h4>
+              <a href="axonometricas.html"> <img class="imagenes" src="./Assets/Imagenes/axonométricas.png" alt="Axonométricas"> </a>
+            </div>
+            <div class="gal">
+              <h4 class="h4">MAPAS</h4>
+              <a href="mapas.html"> <img class="imagenes" src="./Assets/Imagenes/mapas.png" alt="Mapas"> </a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section id="contacto">
+        <div class="contacto">
+          <div class="titulo">
+            <h3 class="h3">CONTACTO</h3>
+          </div>
+          <div class="contact">
+            <div class="redes">
+              <div class="red">
+                <img class="iconos" src="./Assets/Imagenes/instagram.png" alt="instagram">
+                <p class="h5">@byarqilustrada</p>
+              </div>
+              <div class="red">
+                <img class="iconos" src="./Assets/Imagenes/facebook.png" alt="facebook">
+                <p class="h5">BY Arq Ilustrada</p>
+              </div>
+              <div class="red">
+                <img class="iconos" src="./Assets/Imagenes/correo.png" alt="correo">
+                <p class="h5">byarqilustrada@gmail.com</p>
+              </div>
+            </div>
+            <img class="logocontacto" src="./Assets/Imagenes/Logo.png" alt="Logo">
+          </div>
+          <p class="h6">Diseñado por Brenda Yelicich</p>
+        </div>
+
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> <!-- Bootstrap script -->
+
+  </body>
+
+</html>

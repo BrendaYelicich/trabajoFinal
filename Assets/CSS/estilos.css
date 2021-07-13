@@ -1,0 +1,371 @@
+*{ /* Selector Universal - Reseteo de estilos */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Color de fondo de todo el sitio*/
+body {
+  background-color: #EFE1A6;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.body2 {
+  background-color: #F89459;
+}
+
+
+/* Header HTML LINKS */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navegador */
+.navegador {
+  width: 100%;
+  background-color: #F89459;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  z-index: 1000; /* se coloca delante */
+}
+
+/* Logo navegador */
+.logo {
+  max-width: 100px;
+}
+
+/* Enlaces internos del navegador */
+.nav_list {
+  display: flex;
+}
+
+.menu {
+  display: block;
+  padding-right: 1.5rem;
+  color: white;
+  font-size: 70px;
+  font-family: 'Amatic SC', cursive;
+}
+
+@media (min-width: 1000px) {
+  .menu {
+    font-size: 40px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+
+/* Menú desplegable */
+
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 0.5rem;
+  background-color: #F89459;
+}
+
+.desplegable {
+  color: white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 55px;
+}
+
+@media (min-width: 1000px) {
+  .desplegable {
+    font-size: 30px;
+  }
+}
+
+.nav_list li:hover > .submenu {
+  display:block;
+}
+
+/* Mousse sobre los enlaces internos */
+.menu:hover {
+  color: #EFE1A6;
+}
+
+.desplegable:hover {
+  color: #EFE1A6;
+}
+
+/* Carrusel */
+
+#carouselExampleIndicators {
+  padding-top: 116px;
+}
+
+.d-block {
+  height: 740px;
+  object-fit: cover; /* mantener proporciones de imagenes */
+}
+
+@media (min-width: 1000px) {
+  .d-block {
+    height: 541px;
+  }
+}
+
+/* SECCIONES */
+
+.secciones {
+  color: black;
+  padding: 6rem 2.5rem 2.5rem 2.5rem;
+}
+
+.logofinal {
+  max-width: 200px;
+  object-fit: cover; /* mantener proporciones de imagenes */
+}
+
+/* sección Sobre Mí */
+
+.presentación {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto {
+  max-width: 450px;
+  padding-right: none;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+@media (min-width: 1000px) {
+  .presentación {
+    flex-direction: row;
+  }
+
+  .foto {
+    padding-right: 40px;
+    padding-bottom: none;
+  }
+}
+
+.h3 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 80px;
+}
+
+.biografía {
+  font-size: 30px;
+}
+
+@media (min-width: 1000px) {
+  .h3 {
+    font-size: 40px;
+  }
+
+  .biografía {
+    font-size: 15px;
+  }
+}
+
+/* sección Galería */
+
+.tres {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 4rem 0rem 5rem 0rem;
+}
+
+@media (min-width: 1000px) {
+  .tres {
+    flex-direction: row;
+  }
+}
+
+.gal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+
+@media (min-width: 1000px) {
+  .gal {
+    padding-bottom: none;
+  }
+}
+
+.h4 {
+  font-family: 'Amatic SC', cursive;
+  font-size: 75px;
+}
+
+.imagenes {
+  max-width: 500px;
+}
+
+@media (min-width: 1000px) {
+  .imagenes {
+    max-width: 220px;
+  }
+
+  .h4 {
+    font-size: 35px;
+  }
+}
+
+/* sección Contacto */
+
+.contacto {
+  color: white;
+  background-color: #2DA584;
+  width: 100%;
+  padding: 2.5rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.redes {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.red {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 50px;
+}
+
+.iconos {
+  max-width: 70px;
+  padding-right: 10px;
+}
+
+.logocontacto {
+  max-width: 250px;
+  padding-right: 80px;
+}
+
+.h5 {
+  font-size: 30px;
+}
+
+.h6 {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+@media (min-width: 1000px) {
+  .redes {
+    flex-direction: row;
+  }
+
+  .h5 {
+    font-size: 17px;
+  }
+
+  .h6 {
+    font-size: 12px;
+    padding-top: none;
+  }
+}
+
+/* HTML LINKS */
+
+.portfolio {
+  padding-top: 116px;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2.5rem;
+}
+
+.h1 {
+  color: black;
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+}
+
+/* Div que contiene todas las imágenes - Grilla */
+.imggaleria {
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 columnas del mismo ancho */
+  grid-auto-rows: 600px; /* altura de las filas */
+  grid-gap: 1rem; /* espaciado entre filas y columnas */
+}
+
+.imggaleria2 {
+  padding: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 3 columnas del mismo ancho */
+  grid-auto-rows: 450px; /* altura de las filas */
+  grid-gap: 1rem; /* espaciado entre filas y columnas */
+}
+
+@media (min-width: 1000px) {
+  .imggaleria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 300px; /* altura de las filas */
+  }
+
+  .imggaleria2 {
+    grid-auto-rows: 600px; /* altura de las filas */
+  }
+}
+
+/* Imágenes */
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* mantener proporciones de imagenes */
+}
+
+/* Div de cada imágen */
+
+@media (min-width: 1000px) {
+  .imgcontenedorp:nth-child(1) { /* perspectivas peatonales */
+    grid-column-start: span 2;
+  }
+
+  .imgcontenedorp:nth-child(2) { /* perspectivas peatonales */
+    grid-row-start: span 2;
+  }
+}
+
+.imgcontenedora:nth-child(1) { /* axonométricas */
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+
+.imgcontenedorm:nth-child(1) { /* mapas */
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
